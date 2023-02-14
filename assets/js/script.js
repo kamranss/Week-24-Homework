@@ -80,7 +80,7 @@ function checkCredentials(pass, em){
     }
     else{
         console.log("Access denied - Provided password or email is not valid");
-        goto
+    
     }
 }
 
