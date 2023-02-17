@@ -75,23 +75,19 @@ console.log(calculateCompositeNumbers(arr2));
 function checkCredentials(pass, em){
     let password = "12345";
     let email= "lorem@code.edu.az";
-    let AGmessage = "Access Granted";
-    for (let i = 0; i == AGmessage; i++) {
 
-        let userEmail = prompt("Please enter your email")
-        let userPassword = prompt("Please enter your password")
-        if(pass == password && em == email){
-            // console.log("Access Granted");
-            
-            return AGmessage;
-        }
-        else{
-            // console.log("Access denied - Provided password or email is not valid");
-            let ADmessage = "Access denied - Provided password or email is not valid";
-            return ADmessage; 
-        }
-        
+    if(pass == password && em == email){
+        console.log("Access Granted");
+    }
+    else{
+        console.log("Access denied - Provided password or email is not valid");
     }
 }
 
-prompt(checkCredentials(userEmail, userPassword))
+for (let i = 0; i < array.length; i++) {
+    
+    let userEmail = prompt("Please enter your email")
+    let userPassword = prompt("Please enter your password")
+    checkCredentials(userEmail, userPassword)
+    
+}
