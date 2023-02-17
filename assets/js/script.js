@@ -84,10 +84,7 @@ function checkCredentials(pass, em){
     }
 }
 
-for (let i = 0; i < array.length; i++) {
-    
+
     let userEmail = prompt("Please enter your email")
     let userPassword = prompt("Please enter your password")
     checkCredentials(userEmail, userPassword)
-    
-}
