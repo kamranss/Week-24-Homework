@@ -57,18 +57,18 @@ console.log(calculateCompositeNumbers(arr2));
 
 /*  calculating The quantity of Prime numbers Within the list */
 
-// let arr3 = [1,2,3,4,5,6];
-// let result3 = 0;
-// function calculatePrimeNumbers(m){
-//     for (let i = 0; i < arr3.length; i++) {
-//             if(arr3[i]%2 == 0){
-//                 result3++
-//             }
-//     }
-//     return result3;
-// }
+let arr3 = [1,2,3,4,5,6];
+function calculatePrimeNumbers(arr3){
+    let result3 = 0;
+    for (let i = 0; i < arr3.length-1; i++) {
+            if(arr3[i]%2 == 0){
+                result3++;
+            }
+    }
+    return result3;
+}
 
-// console.log(calculatePrimeNumbers(arr3));
+console.log(calculatePrimeNumbers(arr3));
 
 
 
