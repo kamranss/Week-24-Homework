@@ -29,7 +29,7 @@ console.log(factorial(5));
 /*  calculating Composite numbers Within the list */
 let arr1 = [1,2,3,4,5,6]
 let result1 = 0
-function calculatePrimeNumbers(m){
+function calculateCompositeNumbers(m){
     for (let i = 0; i < arr1.length; i++) {
             if(arr1[i]%2 == 0){
                 result1+= arr1[i] * arr1[i]
@@ -38,13 +38,13 @@ function calculatePrimeNumbers(m){
     return result1;
 }
 
-console.log(calculatePrimeNumbers(arr1));
+console.log(calculateCompositeNumbers(arr1));
 
 
 /*  calculating Prime numbers Within the list */
 let arr2 = [1,2,3,4,5,6];
 let result2 = 0;
-function calculateCompositeNumbers(m){
+function calculatePrimeNumbers(m){
     for (let i = 0; i < arr2.length; i++) {
             if(arr2[i]%2 != 0){
                 result2+= arr2[i]
@@ -53,7 +53,7 @@ function calculateCompositeNumbers(m){
     return result2;
 }
 
-console.log(calculateCompositeNumbers(arr2));
+console.log(calculatePrimeNumbers(arr2));
 
 /*  calculating The quantity of Prime numbers Within the list */
 
@@ -72,19 +72,25 @@ console.log(calculatePrimeNumbers(arr3));
 
 
 
+
+let userEmail = prompt("Please enter your email");
+let userPassword = prompt("Please enter your password");
+
 function checkCredentials(pass, em){
     let password = "12345";
     let email= "lorem@code.edu.az";
 
     if(pass == password && em == email){
-        console.log("Access Granted");
+        
+        alert("Access Granted");
+        let html = document.getElementById("body");
+        html.innerHTML = "<h1>salam</h1>";
     }
     else{
-        console.log("Access denied - Provided password or email is not valid");
+       alert("Access denied - Provided password or email is not valid");
+       let html = document.getElementById("body");
+       html.innerHTML = "";
     }
 }
 
-
-    let userEmail = prompt("Please enter your email")
-    let userPassword = prompt("Please enter your password")
-    checkCredentials(userEmail, userPassword)
+checkCredentials(userPassword, userEmail);
