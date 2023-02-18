@@ -26,7 +26,7 @@ function factorial(m){
 console.log(factorial(5));
 
 
-/*  calculating Prime numbers Within the list */
+/*  calculating Composite numbers Within the list */
 let arr1 = [1,2,3,4,5,6]
 let result1 = 0
 function calculatePrimeNumbers(m){
@@ -41,7 +41,7 @@ function calculatePrimeNumbers(m){
 console.log(calculatePrimeNumbers(arr1));
 
 
-/*  calculating Composite numbers Within the list */
+/*  calculating Prime numbers Within the list */
 let arr2 = [1,2,3,4,5,6];
 let result2 = 0;
 function calculateCompositeNumbers(m){
